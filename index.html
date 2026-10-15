@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portal Layanan Akademik – Ajukan Surat dan Dokumen Kuliah</title>
+  <meta name="description" content="Portal untuk mengajukan surat aktif kuliah, transkrip sementara, dan cuti akademik.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <p class="brand">Portal Layanan Akademik</p>
+      <p class="tagline">Biro Akademik Universitas Contoh</p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Navigasi utama">
+    <ul class="wrap">
+      <li><a href="#intro">Beranda</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#permohonan">Ajukan permohonan</a></li>
+    </ul>
+  </nav>
+
+  <main id="konten-utama">
+    <section id="intro" class="intro" aria-labelledby="judul-intro">
+      <div class="wrap">
+        <h1 id="judul-intro">Urus dokumen akademik tanpa antre</h1>
+        <p>Pilih layanan yang kamu perlukan, isi formulir permohonan, dan petugas akan memproses pengajuanmu dalam 1–3 hari kerja.</p>
+        <img class="intro-img" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 160'%3E%3Crect width='400' height='160' fill='%23dbe9e4'/%3E%3Cpath d='M60 110h280M90 110V60l110-30 110 30v50' fill='none' stroke='%231f5c4d' stroke-width='6'/%3E%3C/svg%3E"
+             alt="Ilustrasi gedung kampus sederhana berwarna hijau">
+      </div>
+    </section>
+
+    <section id="layanan" class="layanan" aria-labelledby="judul-layanan">
+      <div class="wrap">
+        <h2 id="judul-layanan">Layanan tersedia</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Surat Aktif Kuliah</h3>
+            <p>Bukti bahwa kamu terdaftar sebagai mahasiswa aktif, untuk beasiswa, BPJS, atau keperluan instansi.</p>
+            <a class="btn" href="#permohonan">Ajukan surat aktif kuliah</a>
+          </article>
+          <article class="card">
+            <h3>Transkrip Sementara</h3>
+            <p>Rekap nilai dan IPK sampai semester berjalan, tanpa tanda tangan basah.</p>
+            <a class="btn" href="#permohonan">Ajukan transkrip sementara</a>
+          </article>
+          <article class="card">
+            <h3>Cuti Akademik</h3>
+            <p>Pengajuan berhenti kuliah sementara maksimal dua semester dengan persetujuan dosen wali.</p>
+            <a class="btn" href="#permohonan">Ajukan cuti akademik</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="permohonan" class="permohonan" aria-labelledby="judul-form">
+      <div class="wrap">
+        <h2 id="judul-form">Formulir permohonan</h2>
+        <p class="hint">Kolom bertanda <span aria-hidden="true">*</span><span class="sr-only">bintang</span> wajib diisi.</p>
+
+        <form action="#" method="post">
+          <div class="field">
+            <label for="nama">Nama lengkap <span aria-hidden="true">*</span></label>
+            <input type="text" id="nama" name="nama" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="nama@email.com" required aria-describedby="email-hint">
+            <small id="email-hint">Notifikasi proses akan dikirim ke email ini.</small>
+          </div>
+
+          <fieldset class="field">
+            <legend>Jenis layanan <span aria-hidden="true">*</span></legend>
+            <label class="radio"><input type="radio" name="layanan" value="surat-aktif" required> Surat Aktif Kuliah</label>
+            <label class="radio"><input type="radio" name="layanan" value="transkrip"> Transkrip Sementara</label>
+            <label class="radio"><input type="radio" name="layanan" value="cuti"> Cuti Akademik</label>
+          </fieldset>
+
+          <div class="field">
+            <label for="keperluan">Keperluan</label>
+            <textarea id="keperluan" name="keperluan" rows="5" maxlength="300" aria-describedby="keperluan-hint"></textarea>
+            <small id="keperluan-hint">Maksimal 300 karakter.</small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Kirim permohonan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Biro Akademik Universitas Contoh · Jl. Kampus No. 1</p>
+      <p><a href="mailto:akademik@contoh.ac.id">akademik@contoh.ac.id</a> · Senin–Jumat, 08.00–16.00</p>
+    </div>
+  </footer>
+</body>
+</html>
